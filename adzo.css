@@ -1,0 +1,233 @@
+
+
+.icons{
+    color: red;
+}
+.icons fa{
+    display: flex;
+    
+
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+
+}
+body{
+    height: 100vh;
+    font: 1.6rem Helvetica,arial;
+    margin: 0;
+
+}
+a{
+    text-decoration: none;
+    color: #000;
+
+}
+a:hover{
+    color: #490ff8fb;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 680rem 5rem;
+    height: 100%;
+
+}
+header{
+    grid-area: header;
+    background-color: #080808;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.5rem;
+
+}
+header a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+header a:hover{
+    color:  #0e9df0;
+    cursor: pointer;
+    
+}
+.logo{
+    font-size: 3rem;
+}
+.item h3{
+
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.item p{
+    text-align: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+}
+.item button{
+    font-size: 30px;
+}
+button:hover{
+    cursor: pointer;
+    background: #0e9df0;
+}
+.nav-link a{
+    margin: 25px;
+
+}
+.my-products{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.my-products li{
+    flex: 0 1 30rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    height: 42rem;
+    border-top: 0.2rem #2765 solid;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px #fff;
+    transition: 0.5s all;
+
+}
+.product:hover{
+    box-shadow: 10px 10px 10px 10px #0e9df0;
+    padding: 20px 20px;
+    background: #0e9df0;
+}
+.product img{
+    max-height: 26rem;
+    max-width: 22rem;
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+.product-name{
+    line-height: 2.2rem;
+}
+.product-brand{
+    font-size: 20px;
+    color: #0187;
+
+}
+.product-price{
+    font-size: 2rem;
+}
+.last-products span{
+
+    background: #0a0a0a;
+    height: 10px;
+    width: 60%;
+    position: absolute;
+    right: 600px;
+}
+.arrivals h3{
+    font-size: 30px;
+    color: #0e9df0;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.arrivals img{
+    
+    max-height: 26rem;
+    max-width: 44rem;
+    margin-top: 2rem;
+    
+}
+.my-teams{
+    position: relative;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px
+}
+.my-teams .card{
+    position: relative;
+    background: #ee1414;
+    margin: 20px 10px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+
+}
+.my-teams .card:hover{
+    height: 100px;
+    cursor:  pointer;
+}
+.my-teams .card .picture{
+    position: relative;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.my-teams .card .text{
+    position: relative;
+    padding: 0 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.text h2 p{
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.my-teams .card:hover .text{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+.my-teams .card .picture img{
+
+    max-height: 26rem;
+    max-width: 44rem;
+    margin-top: 2rem;
+    
+    border-radius: 4px;
+}
+
+
+.my-footer {
+    background-color: #000;
+    min-width: 100vh;
+    min-height: 100vh;
+
+
+}
+.my-footer h2{
+    color: #fff;
+    font-size: 35px;
+}
